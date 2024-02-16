@@ -15,7 +15,7 @@ Var
    salario:       real
    horas_por_dia: inteiro
 
-   horas_por_mes: inteiro
+   horas_por_mes:    inteiro
    salario_por_hora: real
 
 
@@ -35,17 +35,17 @@ Inicio
    escreval("Horas de trabalho (Ex.: 8)")
    escreva("-> ")
    leia(horas_por_dia)
-   
+
    escreval("")
 
    // 4 semanas no mês, sábado e domingo não conta, ou seja:
    // 4*2 = 8 dias não úteis
    dias_uteis <- DIAS_NO_MES - 8
    horas_por_mes <-  dias_uteis * horas_por_dia
-   
+
    salario_por_hora <- salario/horas_por_mes
-   
+
    escreva("Seu valor /hora = R$", salario_por_hora)
-   
+
    escreval("")
 Fimalgoritmo

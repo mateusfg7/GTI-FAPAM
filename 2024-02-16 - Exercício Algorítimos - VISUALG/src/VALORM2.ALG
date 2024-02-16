@@ -10,7 +10,7 @@ Algoritmo "ValorM²"
 Var
 
    VALOR_METRO_QUADRADO: real
-   escolher_valor: caractere
+   escolher_valor:       caractere
 
    altura_terreno:       real
    largura_terreno:      real
@@ -46,7 +46,7 @@ Inicio
 
       escreval("")
    fimse
-   
+
    escreval("-| RESULTADOS |-------------------------")
    escreval("")
 

@@ -10,10 +10,10 @@ algoritmo "MediaNotas"
 var
 
    primeira_nota: inteiro
-   segunda_nota: inteiro
+   segunda_nota:  inteiro
    terceira_nota: inteiro
    media: real
-   loop: caractere
+   loop:  caractere
 
 
 inicio
