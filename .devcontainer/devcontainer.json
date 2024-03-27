@@ -1,0 +1,49 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
+{
+  "name": "Ubuntu",
+  // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+  "image": "mcr.microsoft.com/devcontainers/base:jammy",
+
+  // Features to add to the dev container. More info: https://containers.dev/features.
+  "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/devcontainers/features/python:1": {}
+  },
+
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  // "forwardPorts": [],
+
+  // Use 'postCreateCommand' to run commands after the container is created.
+  "postCreateCommand": "chmod +x .devcontainer/post-create.sh && .devcontainer/post-create.sh",
+
+  // Configure tool-specific properties.
+  "customizations": {
+    "vscode": {
+      // Extensios
+      "extensions": [
+        "streetsidesoftware.code-spell-checker", // Code Spell Checker (gramar)
+
+        "GitHub.vscode-pull-request-github", // Github Pull Requests and Issues
+        "github.copilot", // Github Copilot
+
+        "ms-python.python", // Python
+        "ms-python.debugpy", // Python Debug
+        "ms-python.isort", // Python Sort Imports
+        "ms-toolsai.jupyter", // Jupyter
+
+        "miguelsolorio.fluent-icons", // Fluent Icons
+        "pkief.material-icon-theme", // Material Icon Theme
+        "st0pien.min-darker", // Min Darker Theme
+
+        "naumovs.color-highlight", // Color code highlight
+        "editorconfig.editorconfig", // Editor Config
+        "usernamehw.errorlens", // Error Lens
+        "eamodio.gitlens" // Git Lens
+      ]
+    }
+  }
+
+  // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+  // "remoteUser": "root"
+}
