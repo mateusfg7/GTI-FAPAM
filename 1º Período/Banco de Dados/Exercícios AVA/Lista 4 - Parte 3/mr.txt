@@ -1,0 +1,7 @@
+JOGADOR (id_jogador PK, nome, data_nasc, id_time*)
+POSICAO (id_jogador*, posicao)
+TIME (id_time PK, nome, cidade, estadio)
+PARTIDA (id_partida PK, data, local, id_campeonato*)
+DISPUTA_PARTIDA (id_time*, id_partida*)
+CAMPEONATO (id_campeonato PK, nome, ano, tipo)
+

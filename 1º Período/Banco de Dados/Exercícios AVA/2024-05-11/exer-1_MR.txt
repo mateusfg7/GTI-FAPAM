@@ -1,0 +1,6 @@
+CLIENTE (CPF PK, cli_nome, rua, bairro, cidade, número)
+TELEFONE_CLI (cpf_cliente* PK, telefone PK)
+ANIMAL (especie, ani_nome, ani_id PK, cpf_cliente*)
+VETERIA (crv PK, salario, vet_nome, experiencia)
+EMFERMIDADE (enf_id PK, gravidade, enfi_descrição)
+CONSULTA (cod PK, data, valor, ani_id*, crv_vet*, enf_id*)
